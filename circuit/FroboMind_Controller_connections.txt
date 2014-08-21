@@ -1,0 +1,29 @@
+
+Connector P3
+PA0 MotorL enable (Simple-H EA)
+PA1 MotorL encoder A [Blue wire from emg49 motor]
+PA2 MotorR enable (Simple-H EA)
+PA3 MotorR encoder A [Blue wire from emg49 motor]
+PF2 MotorR current sense (Simple-H CA)
+PF1 MotorL current sense (Simple-H CA)
+PD0 (INT0) MotorL encoder B [Purple wire from emg49 motor]
+PD1 (INT1) MotorR encoder B [Purple wire from emg49 motor]
+PE0
+PE1  
+VCC [Brown wires from emg49 motor]
+GND [Green wires from emg49 motor]
+
+Connector P4
+GND
+PB5 (OC1A) MotorL forward PWM (Simple-H PA)
+PB6 (OC1B) MotorL reverse PWM (Simple-H PB)
+PE3 (OC3A) MotorR forward PWM (Simple-H PA)
+PE4 (OC3B) MotorR reverse PWM (Simple-H PB)
+PE5 (external LED)
+VCC
+VCC
+VCC
+GND
+GND
+GND
+
