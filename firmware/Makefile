@@ -41,7 +41,7 @@ PROJECT=main
 SOURCES=main.c wheel.c pid_ctrl_int.c avr_serial.c rcnmea.c
 MMCU=at90can128
 CC=avr-gcc
-AVRDUDE=avrdude -p c128 -c avrisp2 -P /dev/ttyUSB2
+AVRDUDE=avrdude -p c128 -c avrisp2 -P /dev/ttyUSB0
 
 CFLAGS= -mmcu=$(MMCU) -Wall -Os -pedantic -Wall
 
