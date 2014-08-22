@@ -232,10 +232,12 @@ void nmea_init(void)
 	tx[6] = ',';
 	tx[7] = '2'; /* hw version */
 	tx[8] = ',';
-	tx[9] = '2'; /* sw version */
+	tx[9] = '2'; /* sw major version */
 	tx[10] = ',';
-	tx[11] = '0' + reset_source; /* latest reset type */
-	tx_len = 12;
+	tx[11] = '1'; /* sw minor version */
+	tx[12] = ',';
+	tx[13] = '0' + reset_source; /* latest reset type */
+	tx_len = 14;
 	nmea_tx();
 
 	tx[4] = 'S'; /* prepare for status messages */
