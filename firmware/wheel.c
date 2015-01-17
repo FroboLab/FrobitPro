@@ -110,7 +110,7 @@ extern char state;
 
 /* actuator variables */
 unsigned char set_cmd;
-short vel_set_l, vel_set_r; /* [ticks/s] */
+long vel_set_l, vel_set_r; /* [ticks/s] */
 long prop_l, prop_r;
 short pwm_l, pwm_r;
 

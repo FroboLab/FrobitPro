@@ -50,8 +50,8 @@
 /* shared variables */
 
 /* actuator variables */
-extern short vel_set_l;
-extern short vel_set_r;
+extern long vel_set_l;
+extern long vel_set_r;
 extern short pwm_l;
 extern short pwm_r;
 
