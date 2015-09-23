@@ -60,10 +60,11 @@ $(PROJECT).elf: $(SOURCES)
 	$(CC) $(CFLAGS) -I./ -o $(PROJECT).elf $(SOURCES)
 
 flash: $(PROJECT).hex
-	 $(AVRDUDE) -U flash:w:$(PROJECT).hex
+	$(AVRDUDE) -U flash:w:$(PROJECT).hex
 
-#fuse:
-#	$(AVRDUDE) $(M328FUSEOPT)
+fuse:
+	#Use external clock, no prescaler
+	$(AVRDUDE) -U lfuse:w:0xff:m -U hfuse:w:0xd9:m
 
 clean:
 	rm -f $(PROJECT).elf $(PROJECT).hex
