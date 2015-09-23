@@ -1,5 +1,5 @@
 #############################################################################
-# Frobit FroboMind Controller firmware
+# FrobitPro FroboMind Controller firmware
 # Copyright (c) 2012-2014, Kjeld Jensen <kjeld@frobomind.org>
 # All rights reserved.
 #
@@ -26,9 +26,9 @@
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #############################################################################
 # File: Makefile
-# Project: Frobit FroboMind Controller firmware
-# Platform: RoboCard v1.11 http://www.robocard.org
-# Microcontroller: ATmega328p
+# Project: FrobitPro FroboMind Controller firmware
+# Platform: Frobomind Controller http://www.frobomind.org/index.php/FMCtrl:FroboMind_Controller
+# Microcontroller: AT90CAN128
 # Author: Kjeld Jensen <kjeld@frobomind.org>
 # Created:  2012-08-14
 # Modified: 2013-02-12 Kjeld Jensen, added wheel.c, pid_ctrl.c and migrated to the BSD license
@@ -49,7 +49,7 @@ default:
 	@echo ""
 	@echo "make clean......delete object & hex files"
 	@echo "make hex........build the $(PROJECT).hex file"
-	@echo "make flash......copy $(PROJECT).hex to RoboCard flash"
+	@echo "make flash......copy $(PROJECT).hex to Frobomind Controller flash"
 	@echo "make fuse.......set external crystal fuse"
 	@echo ""
 
